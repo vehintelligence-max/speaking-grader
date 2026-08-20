@@ -1,0 +1,10 @@
+venv/
+reports/
+samples/
+tests/audio/
+__pycache__/
+*.pyc
+*.aiff
+*.m4a
+*.wav
+nohup.out

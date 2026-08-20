@@ -1,0 +1,28 @@
+{
+  "npvi": 39.1,
+  "stress_ratio": 1.41,
+  "n_samples": 5,
+  "source": "TTS macOS",
+  "samples": {
+    "Samantha": {
+      "npvi": 39.07112552316567,
+      "stress_ratio": 1.4271657754010691
+    },
+    "Alex": {
+      "npvi": 39.07112552316567,
+      "stress_ratio": 1.4271657754010691
+    },
+    "Daniel": {
+      "npvi": 39.104634810640725,
+      "stress_ratio": 1.4136904761904758
+    },
+    "Karen": {
+      "npvi": 41.66809079765661,
+      "stress_ratio": 1.3918806959403482
+    },
+    "Fred": {
+      "npvi": 46.29195901286926,
+      "stress_ratio": 1.3465750696933492
+    }
+  }
+}
