@@ -27,6 +27,11 @@ python server.py --port 8971
 Endpoints:
 - `GET /` — upload form (paste script, upload recording)
 - `POST /grade` — multipart form (`student`, `script`, `audio`) → self-contained HTML report with embedded audio players
+- `GET /shadow` — shadowing mode: listen to a model sentence, record an imitation, instant per-sentence grading
+- `GET /shadow/audio?i=&voice=&rate=` — model clip (m4a)
+- `POST /shadow/grade` — multipart (`i`, `audio` from browser mic, webm/opus or mp4) → JSON score
+
+**macOS-only piece:** shadowing model clips are synthesized on demand with the macOS `say` command (`shadow.py: synth()`). On a Linux deployment, replace `synth()` with another TTS (e.g. Edge-TTS, Piper) or ship pre-generated clips — everything else is portable. Browser mic capture requires HTTPS in production (localhost is exempt).
 
 There is also a CLI (`cli.py`) for batch grading and JSON output.
 
